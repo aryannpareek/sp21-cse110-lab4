@@ -9,14 +9,14 @@
 ## Part 1B
 1. 3 is printed to the console at line 12. This is because the counter within the for loop is type "var," thus it can be accessed anywhere within the function
 2. 150 is printed to the console at line 13. This is because the final iteration of the for loop computes 300(0.5) and stores it in var "discountedPrice," which is accessible even after the loop terminates
-3. 150 is printed to the console at line 14. This is because the final iteration of the for loop computes 300(0.5)(100)/100 and stores it in var "finalPrice," which is accessible through out the function
+3. 150 is printed to the console at line 14. This is because the final iteration of the for loop computes 300(0.5)(100)/100 and stores it in var "finalPrice," which is accessible throughout the function
 4. This function will return an array named "discounted," populated with values [50, 100, 150]. This is because each iteration of the for loop computes the finalPrice and pushes it to the discounted array
-5. Line 12 produces a reference error, since "i" is not defined within this scope. Since "i" was of type "let" within the for loop, it ceases to exist after the for loop terminates
-6. Line 13 produces a reference error, since discountedPrice is not defined within this scope. Since discountedPrice is of type "let" within the for loop, it ceases to exist after the for loop terminates
+5. Line 12 produces a reference error, since "i" is not defined within this scope. Since "i" was of type "let" within the for loop, it's not accessible after the for loop terminates
+6. Line 13 produces a reference error, since discountedPrice is not defined within this scope. Since discountedPrice is of type "let" within the for loop, it's not accessible after the for loop terminates
 7. 150 is printed to the console at line 14. This is because finalPrice (type let) was defined at the start of the function, therefore we can access it within this same block of code. finalPrice was updated in the last iteration of the for loop, and that value is displayed when we try to print its value at the end of the function
 8. This function will return an array named "discounted," populated with values [50, 100, 150]. This is because each iteration of the for loop computes the finalPrice and pushes it to the discounted array, which was defined as type "let" at the start of the function
 9. Line 12 produces a reference error, since "i" is not defined within this scope. Because "i" is of type "let" within the for loop, it's not accessible after the for loop terminates
-10. 3 is printed to the console at line 12. const length is assigned value 3 at the begenning of the function, and retains this value through out the function
+10. 3 is printed to the console at line 12. Const length is assigned value 3 (length of prices array) at the begenning of the function, and retains this value throughout the function
 11. This function will return an array named "discounted," populated with values [50, 100, 150]. This is because each iteration of the for loop computes the finalPrice and pushes it to the discounted array, which was defined as type "const" at the start of the function. Since "discounted" wasn't reassigned anywhere within its scope, the code works as intended
 12. 
     * A. student.name
